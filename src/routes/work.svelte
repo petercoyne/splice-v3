@@ -43,8 +43,11 @@
 				</div>
 			</div>
 			<h3 class="mt-8 text-4xl text-white">Gravity Sensation / Tricky Machines</h3>
-			<p class="mt-2 mb-6 text-sm text-neutral-400">Tricky Machines is a physics game developed by dev_archee with a built-in vehicle editor and map maker. Create your own scenarios or choose from hundreds of community made challenges.</p>
-			<Button icon="link" text="Gravity Sensation" url="https://gravitysensation.vercel.app"/>
+			<p class="mt-2 mb-10 text-sm text-neutral-400">Tricky Machines is a physics game developed by dev_archee with a built-in vehicle editor and map maker. Create your own scenarios or choose from hundreds of community made challenges.</p>
+			<div class="flex gap-4">
+				<Button icon="link" text="Gravity Sensation" url="https://gravitysensation.vercel.app"/>
+				<Button icon="link" text="Tricky Machines" url="https://gravitysensation.vercel.app/trickymachines"/>
+			</div>
 		</div>
 
 		<div>
