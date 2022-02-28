@@ -16,9 +16,9 @@
 	<div>
 		<h4 class="uppercase">Welcome</h4>
 		<hr class="my-4"/>
-		<div class="grid grid-cols-[4rem_1px_auto] sm:grid-cols-[8rem_auto] gap-4 md:gap-8 items-center">
+		<div class="grid grid-cols-[4rem_1px_auto] sm:grid-cols-[8rem_auto] gap-4 md:gap-8 items-start">
 			<img src="/profile.webp" alt="Profile" class="self-start lg:mt-8" />
-			<div class="vertica-divider border-r border-neutral-700 h-full sm:hidden"></div>
+			<div class="vertical-divider border-r border-neutral-700 h-full sm:hidden"></div>
 			<div>
 				<h3 class="text-3xl text-white mb-2">Hello :)</h3>
 				<p class="leading-6 text-sm sm:text-base">
