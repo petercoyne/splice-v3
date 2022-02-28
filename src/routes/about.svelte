@@ -17,7 +17,7 @@
 		<h4 class="uppercase">Welcome</h4>
 		<hr class="my-4"/>
 		<div class="grid grid-cols-[4rem_1px_auto] sm:grid-cols-[8rem_auto] gap-4 md:gap-8 items-start">
-			<img src="/profile.webp" alt="Profile" class="self-start lg:mt-8" />
+			<img src="/profile.webp" alt="Drone Selfie" title="Drone Selfie" class="self-start lg:mt-8" />
 			<div class="vertical-divider border-r border-neutral-700 h-full sm:hidden"></div>
 			<div>
 				<h3 class="text-3xl text-white mb-2 lg:mt-2">Hello :)</h3>
@@ -34,8 +34,8 @@
 		<hr class="my-4"/>
 		<div class="grid grid-cols-1 sm:grid-cols-[8rem_auto] lg:grid-cols-[10rem_auto] gap-4 md:gap-8 items-start">
 			<div class="self-start lg:mt-8 flex items-center justify-center max-w-full">
-				<img src="/sveltekit-logo-noglow.webp" alt="SvelteKit" class="shrink min-w-0 max-h-32 m-4 sm:scale-125"/>
-				<img src="/tailwindlogo.png" alt="TailwindCSS" class="shrink min-w-0 max-h-32 m-4 bg-neutral-300 rounded-lg sm:hidden"/>
+				<img src="/sveltekit-logo-noglow.webp" alt="SvelteKit" title="SvelteKit" class="shrink min-w-0 max-h-32 m-4 sm:scale-125"/>
+				<img src="/tailwindlogo.png" alt="TailwindCSS" title="TailwindCSS" class="shrink min-w-0 max-h-32 m-4 bg-neutral-300 rounded-lg sm:hidden"/>
 			</div>
 			<div>
 				<h3 class="text-3xl text-white my-2 text-center sm:text-left hidden lg:block">Technologies</h3>

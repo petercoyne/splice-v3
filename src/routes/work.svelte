@@ -57,9 +57,18 @@
 			</div>
 			<hr class="my-4"/>
 			<div class="flex flex-col sm:flex-row flex-auto gap-4 w-full">
-				<div on:click={() => {activeImage = 1}} class="sm:hover:bg-neutral-700 border border-neutral-800 sm:hover:border-neutral-400 sm:cursor-pointer"><img src="/work/gs1-thumb.webp" alt="Gravity Sensation 1" class="flex-1"/></div>
-				<div on:click={() => {activeImage = 2}} class="sm:hover:bg-neutral-700 border border-neutral-800 sm:hover:border-neutral-400 sm:cursor-pointer"><img src="/work/gs2-thumb.webp" alt="Gravity Sensation 2" class="flex-1"/></div>
-				<div on:click={() => {activeImage = 3}} class="sm:hover:bg-neutral-700 border border-neutral-800 sm:hover:border-neutral-400 sm:cursor-pointer"><img src="/work/gs3-thumb.webp" alt="Gravity Sensation 3" class="flex-1"/></div>
+				<div on:click={() => {activeImage = 1}} class="sm:hover:bg-neutral-700 border border-neutral-800 sm:hover:border-neutral-400 sm:cursor-pointer">
+					<img src="/work/gs1-thumb.webp" alt="Gravity Sensation 1" class="flex-1"/>
+					<div class="text-sm mt-2 text-neutral-500">Responsive layout</div>
+				</div>
+				<div on:click={() => {activeImage = 2}} class="sm:hover:bg-neutral-700 border border-neutral-800 sm:hover:border-neutral-400 sm:cursor-pointer">
+					<img src="/work/gs2-thumb.webp" alt="Gravity Sensation 2" class="flex-1"/>
+					<div class="text-sm mt-2 text-neutral-500">Original → redesign</div>
+				</div>
+				<div on:click={() => {activeImage = 3}} class="sm:hover:bg-neutral-700 border border-neutral-800 sm:hover:border-neutral-400 sm:cursor-pointer">
+					<img src="/work/gs3-thumb.webp" alt="Gravity Sensation 3" class="flex-1"/>
+					<div class="text-sm mt-2 text-neutral-500">Lighthouse, code</div>
+				</div>
 			</div>
 			<hr class="mt-4 mb-8 opacity-20"/>
 			<a href="/work/gs{activeImage}.webp" target="_blank"
