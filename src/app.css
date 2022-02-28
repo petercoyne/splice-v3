@@ -34,24 +34,17 @@ hr {
 }
 
 @font-face {
-    font-family: 'Dekar Light';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Dekar Light'), url('Dekar-Light.woff') format('woff');
-}
-
-@font-face {
     font-family: 'Dekar';
     font-style: normal;
     font-weight: normal;
-    src: local('Dekar'), url('Dekar.woff') format('woff');
+    src: local('Dekar'), url('/Dekar.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Barlow';
     font-style: normal;
     font-weight: normal;
-    src: local('Barlow'), url('Barlow.woff') format('woff');
+    src: local('Barlow'), url('/Barlow.woff') format('woff');
 }
 
 .colorcycle {
