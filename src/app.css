@@ -19,6 +19,10 @@ a {
 	@apply text-sky-400 underline decoration-sky-600;
 }
 
+a:hover {
+	@apply text-sky-300;
+}
+
 h1 {
 	font-family: 'Dekar', sans-serif;
 	-moz-osx-font-smoothing: auto;   /* Firefox */
