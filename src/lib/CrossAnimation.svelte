@@ -36,7 +36,7 @@ afterUpdate(async () => {
 
 </script>
 <div class="grid grid-cols-1 grid-rows-1 aspect-square items-center justify-center {twstring}">
-	<video id="flame" class="-z-30 w-full max-w-full max-h-full mx-auto aspect-square object-cover" src="/6.mp4" autoplay playsinline muted loop />
+	<video id="flame" class="-z-30 max-w-full max-h-full mx-auto aspect-square object-cover" src="/6.mp4" autoplay playsinline muted loop />
 	<div id="secondarrows" bind:this={secondArrows}
 		 class="-z-20 opacity-0 max-h-full max-w-full h-full aspect-square grid items-center justify-center mx-auto grid-rows-2 grid-cols-2  row-start-1 col-start-1 transition-all duration-1000">
 		<div class="block justify-self-start self-start {arrowsize} border-t border-l border-white opacity-50"/>
