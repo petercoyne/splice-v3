@@ -81,5 +81,9 @@
 	<h4 class="uppercase mt-12">Older Work</h4>
 	<hr class="my-4 md:mb-8"/>
 	<a href="/older-work.webp" target="_blank"><img src="/older-work.webp" alt="older work" srcset="" class=""/></a>
+	<div class="flex mt-4 gap-4 max-w-md">
+		<Button icon="link" text="The Fuze" url="https://thefuze.ie"/>
+		<Button icon="link" text="Jodi Coyne, Artist" url="https://jodicoyne.com"/>
+	</div>
 
 </Container>
