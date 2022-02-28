@@ -37,7 +37,7 @@
 				<img src="/sveltekit-logo-noglow.webp" alt="SvelteKit" title="SvelteKit" class="shrink min-w-0 max-h-32 m-4 sm:scale-125"/>
 				<img src="/tailwindlogo.png" alt="TailwindCSS" title="TailwindCSS" class="shrink min-w-0 max-h-32 m-4 bg-neutral-300 rounded-lg sm:hidden"/>
 			</div>
-			<div>
+			<div class="md:self-center lg:self-start">
 				<h3 class="text-3xl text-white my-2 text-center sm:text-left hidden lg:block">Technologies</h3>
 				<p class="leading-6 text-sm sm:text-base text-center sm:text-left">
 					I develop sites using modern frontend development tools such as <a href="http://kit.svelte.dev">SvelteKit</a>,
