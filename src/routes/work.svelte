@@ -51,7 +51,10 @@
 		</div>
 
 		<div>
-			<h4 class="uppercase text-neutral-500">Gallery <span class="sm:hidden text-xs bg-black rounded-md px-1 text-red-500">Desktop/tablet recommended</span></h4>
+			<div class="flex justify-between">
+				<h4 class="uppercase text-neutral-500">Gallery</h4>
+				<h5 class="sm:hidden uppercase text-xs bg-black rounded-md py-[3px] px-2 text-red-500 animate-pulse">Desktop/tablet recommended</h5>
+			</div>
 			<hr class="my-4"/>
 			<div class="flex flex-col sm:flex-row flex-auto gap-4 w-full">
 				<div on:click={() => {activeImage = 1}} class="sm:hover:bg-neutral-700 border border-neutral-800 sm:hover:border-neutral-400 sm:cursor-pointer"><img src="/work/gs1-thumb.webp" alt="Gravity Sensation 1" class="flex-1"/></div>

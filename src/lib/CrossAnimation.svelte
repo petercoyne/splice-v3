@@ -9,11 +9,11 @@ let secondArrows, occlusionGrid
 
 if (size == 1) {
 	twstring = "w-10 h-10 mx-2"
-	arrowsize = "w-1 h-1"
+	arrowsize = "w-1 h-1 m-1"
 	multiplier = 1
 } else if (size == 2) {
 	twstring = "w-16 h-16"
-	arrowsize = "w-2 h-2"
+	arrowsize = "w-2 h-2 m-2"
 	multiplier = 1
 } else if (size == 3) {
 	twstring = "h-full w-full mx-auto"
@@ -48,16 +48,16 @@ afterUpdate(async () => {
 		id="flamegrid" bind:this={occlusionGrid}
 		class="w-full max-h-full grid grid-cols-2 -z-30 mx-auto aspect-square row-start-1 col-start-1">
 		<div id="flameq1" class="flamequad {bgcolor}">
-			<div class="justify-self-end self-end {arrowsize} border-r border-b border-white opacity-50 m-{size}"/>
+			<div class="justify-self-end self-end {arrowsize} border-r border-b border-white opacity-50"/>
 		</div>
 		<div id="flameq2" class="flamequad {bgcolor}">
-			<div class="self-end {arrowsize} border-l border-b border-white opacity-50 m-{size}" />
+			<div class="self-end {arrowsize} border-l border-b border-white opacity-50" />
 		</div>
 		<div id="flameq3" class="flamequad {bgcolor}">
-			<div class="justify-self-end {arrowsize} border-r border-t border-white opacity-50 m-{size}"/>
+			<div class="justify-self-end {arrowsize} border-r border-t border-white opacity-50"/>
 		</div>
 		<div id="flameq4" class="flamequad {bgcolor}">
-			<div class="{arrowsize} border-l border-t border-white opacity-50 m-{size}" />
+			<div class="{arrowsize} border-l border-t border-white opacity-50" />
 		</div>
 	</div>
 </div>
