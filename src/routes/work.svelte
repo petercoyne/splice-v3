@@ -51,23 +51,23 @@
 		</div>
 
 		<div>
-			<div class="flex justify-between">
+			<div class="flex justify-between mt-8 md:mt-0">
 				<h4 class="uppercase text-neutral-500">Gallery</h4>
 				<h5 class="sm:hidden uppercase text-xs bg-black rounded-md py-[3px] px-2 text-red-500 animate-pulse">Desktop/tablet recommended</h5>
 			</div>
-			<hr class="my-4"/>
+			<hr class="mt-4 mb-2"/>
 			<div class="flex flex-col sm:flex-row flex-auto gap-4 w-full">
 				<div on:click={() => {activeImage = 1}} class="sm:hover:bg-neutral-700 border border-neutral-800 sm:hover:border-neutral-400 sm:cursor-pointer">
+					<div class="text-sm mb-2 text-neutral-500 whitespace-nowrap">Responsive layout</div>
 					<img src="/work/gs1-thumb.webp" alt="Gravity Sensation 1" class="flex-1"/>
-					<div class="text-sm mt-2 text-neutral-500">Responsive layout</div>
 				</div>
 				<div on:click={() => {activeImage = 2}} class="sm:hover:bg-neutral-700 border border-neutral-800 sm:hover:border-neutral-400 sm:cursor-pointer">
+					<div class="text-sm mb-2 text-neutral-500 whitespace-nowrap">Original → redesign</div>
 					<img src="/work/gs2-thumb.webp" alt="Gravity Sensation 2" class="flex-1"/>
-					<div class="text-sm mt-2 text-neutral-500">Original → redesign</div>
 				</div>
 				<div on:click={() => {activeImage = 3}} class="sm:hover:bg-neutral-700 border border-neutral-800 sm:hover:border-neutral-400 sm:cursor-pointer">
+					<div class="text-sm mb-2 text-neutral-500 whitespace-nowrap">Lighthouse, code</div>
 					<img src="/work/gs3-thumb.webp" alt="Gravity Sensation 3" class="flex-1"/>
-					<div class="text-sm mt-2 text-neutral-500">Lighthouse, code</div>
 				</div>
 			</div>
 			<hr class="mt-4 mb-8 opacity-20"/>
@@ -80,6 +80,6 @@
 
 	<h4 class="uppercase mt-12">Older Work</h4>
 	<hr class="my-4 md:mb-8"/>
-	<a href="/older-work.webp" target="_blank"><img src="/older-work.webp" alt="older work" srcset="" class="-mb-4"/></a>
+	<a href="/older-work.webp" target="_blank"><img src="/older-work.webp" alt="older work" srcset="" class=""/></a>
 
 </Container>
