@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: 'Barlow', sans-serif;
+	color: #ccc;
+	background-color: #000;
+	-moz-osx-font-smoothing: grayscale;   /* Firefox */
+	-webkit-font-smoothing: antialiased; /* WebKit  */
+}
+
+b {
+	font-weight: normal;
+	color: white;
+}
+
+a {
+	@apply text-sky-400 underline decoration-sky-600;
+}
+
+h1 {
+	font-family: 'Dekar', sans-serif;
+	-moz-osx-font-smoothing: auto;   /* Firefox */
+     -webkit-font-smoothing: auto; /* WebKit  */
+}
+
+h2, h3, .dekar {
+    font-family: 'Dekar', sans-serif;
+}
+
+hr {
+    @apply border border-b-0 opacity-30 -z-20;
+}
+
+@font-face {
+    font-family: 'Dekar Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dekar Light'), url('Dekar-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Dekar';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dekar'), url('Dekar.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow'), url('Barlow.woff') format('woff');
+}
+
+.colorcycle {
+	background: linear-gradient(to right, #32C5FF 0%, #B620E0 33%, #F7B500 66%, #32C5FF 100%);
+	background-size:200%;
+	color: #000;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+	from {
+        background-position: 100%;
+	}
+	to {
+        background-position: 300%;
+	}
+}
