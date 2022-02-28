@@ -55,8 +55,10 @@
 				<h4 class="uppercase text-neutral-500">Gallery</h4>
 				<h5 class="sm:hidden uppercase text-xs bg-black rounded-md py-[3px] px-2 text-red-500 animate-pulse">Desktop/tablet recommended</h5>
 			</div>
-			<hr class="mt-4 mb-2"/>
-			<div class="flex flex-col sm:flex-row flex-auto gap-4 w-full">
+			<hr class="mt-4"/>
+			<img src="/tm.webp" alt="Tricky Machines"/>
+
+			<!-- <div class="flex flex-col sm:flex-row flex-auto gap-4 w-full pt-1">
 				<div on:click={() => {activeImage = 1}} class="sm:hover:bg-neutral-700 border border-neutral-800 sm:hover:border-neutral-400 sm:cursor-pointer">
 					<div class="text-sm mb-2 text-neutral-500 whitespace-nowrap">Responsive layout</div>
 					<img src="/work/gs1-thumb.webp" alt="Gravity Sensation 1" class="flex-1"/>
@@ -74,13 +76,13 @@
 			<a href="/work/gs{activeImage}.webp" target="_blank"
 			class="object-cover hidden sm:block min-h-0 max-h-full overflow-hidden">
 				<img src="/work/gs{activeImage}.webp" alt="Tricky Machines website screenshot" class="object-cover w-full"/>
-			</a>
+			</a> -->
 		</div>
 	</div>
 
 	<h4 class="uppercase mt-12">Older Work</h4>
 	<hr class="my-4 md:mb-8"/>
-	<a href="/older-work.webp" target="_blank"><img src="/older-work.webp" alt="older work" srcset="" class="rounded-tr-2xl rounded-bl-2xl"/></a>
+	<a href="/older-work.webp" target="_blank"><img src="/older-work.webp" alt="older work" srcset="" class="rounded-2xl"/></a>
 	<div class="flex mt-4 gap-4 max-w-md">
 		<Button icon="link" text="The Fuze" url="https://thefuze.ie" external/>
 		<Button icon="link" text="Jodi Coyne, Artist" url="https://jodicoyne.com" external/>
