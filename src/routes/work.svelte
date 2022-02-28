@@ -79,7 +79,7 @@
 	</div>
 
 	<h4 class="uppercase mt-12">Older Work</h4>
-	<hr class="my-4"/>
-	<a href="/older-work.webp" target="_blank"><img src="/older-work.webp" alt="older work" srcset=""/></a>
+	<hr class="mt-4 mb-8"/>
+	<a href="/older-work.webp" target="_blank"><img src="/older-work.webp" alt="older work" srcset="" class="-mb-4"/></a>
 
 </Container>

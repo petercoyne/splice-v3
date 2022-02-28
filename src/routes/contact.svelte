@@ -8,9 +8,11 @@ import Container from "$lib/Container.svelte";
 </script>
 <svelte:window bind:scrollY={y}/>
 <Container>
+	<h4 class="uppercase text-neutral-500">Contact Details</h4>
+	<hr class="mt-4 mb-8 border-neutral-500"/>
 	<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-16 md:mt-8">
 		<div>
-			<h1 class="text-4xl mb-2">Contact Me</h1>
+			<h1 class="text-4xl mb-2 text-white">Get in touch!</h1>
 			<p class="leading-7">
 				I'm looking for web projects with a bit of interactivity, or maybe something that has basic
 				ecommerce elements. If you have an idea for a project, feel free to contact me.
