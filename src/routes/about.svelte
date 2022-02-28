@@ -17,7 +17,7 @@
 		<h4 class="uppercase">Welcome</h4>
 		<hr class="my-4"/>
 		<div class="grid grid-cols-[4rem_1px_auto] sm:grid-cols-[8rem_auto] gap-4 md:gap-8 items-center">
-			<img src="/profile.webp" alt="Profile" class="self-start" />
+			<img src="/profile.webp" alt="Profile" class="self-start lg:mt-8" />
 			<div class="vertica-divider border-r border-neutral-700 h-full sm:hidden"></div>
 			<div>
 				<h3 class="text-3xl text-white mb-2">Hello :)</h3>
@@ -33,7 +33,7 @@
 		<h4 class="uppercase">Tools of the trade</h4>
 		<hr class="my-4"/>
 		<div class="grid grid-cols-1 sm:grid-cols-[8rem_auto] lg:grid-cols-[10rem_auto] gap-4 md:gap-8 items-center">
-			<div class="self-start flex items-center justify-center max-w-full">
+			<div class="self-start lg:mt-8 flex items-center justify-center max-w-full">
 				<img src="/sveltekit-logo-noglow.webp" alt="SvelteKit" class="shrink min-w-0 max-h-32 m-4 sm:scale-125"/>
 				<img src="/tailwindlogo.png" alt="TailwindCSS" class="shrink min-w-0 max-h-32 m-4 bg-neutral-300 rounded-lg sm:hidden"/>
 			</div>
