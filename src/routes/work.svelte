@@ -45,8 +45,8 @@
 			<h3 class="mt-8 text-4xl text-white">Gravity Sensation / Tricky Machines</h3>
 			<p class="mt-2 mb-10 text-sm text-neutral-400">Tricky Machines is a physics game developed by dev_archee with a built-in vehicle editor and map maker. Create your own scenarios or choose from hundreds of community made challenges.</p>
 			<div class="flex gap-4">
-				<Button icon="link" text="Gravity Sensation" url="https://gravitysensation.vercel.app"/>
-				<Button icon="link" text="Tricky Machines" url="https://gravitysensation.vercel.app/trickymachines"/>
+				<Button icon="link" text="Gravity Sensation" url="https://gravitysensation.vercel.app" external/>
+				<Button icon="link" text="Tricky Machines" url="https://gravitysensation.vercel.app/trickymachines" external/>
 			</div>
 		</div>
 
@@ -82,8 +82,8 @@
 	<hr class="my-4 md:mb-8"/>
 	<a href="/older-work.webp" target="_blank"><img src="/older-work.webp" alt="older work" srcset="" class="rounded-tr-2xl rounded-bl-2xl"/></a>
 	<div class="flex mt-4 gap-4 max-w-md">
-		<Button icon="link" text="The Fuze" url="https://thefuze.ie"/>
-		<Button icon="link" text="Jodi Coyne, Artist" url="https://jodicoyne.com"/>
+		<Button icon="link" text="The Fuze" url="https://thefuze.ie" external/>
+		<Button icon="link" text="Jodi Coyne, Artist" url="https://jodicoyne.com" external/>
 	</div>
 
 </Container>

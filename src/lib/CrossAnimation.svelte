@@ -76,6 +76,7 @@ afterUpdate(async () => {
 #flamegrid {
     transition: all 2s;
     transform: rotate(0deg);
+	gap: 3px;
 	/* opacity: 80; */
 	/* mix-blend-mode: overlay; */
 }
