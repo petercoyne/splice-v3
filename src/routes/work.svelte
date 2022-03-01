@@ -27,23 +27,23 @@
 				</a>
 				Latest Project
 			</h4>
-			<hr class="my-4"/>
-			<div class="flex opacity-40 gap-4 flex-row text-sm">
+			<hr class="my-4 border-black"/>
+			<h3 class="mt-8 text-4xl text-black">Gravity Sensation / Tricky Machines</h3>
+			<div class="flex opacity-60 gap-4 flex-row text-sm my-2">
 				<div class="flex gap-2 shrink-0">
-					<img src="/calendar.svg" alt="Project completed"/>
+					<img src="/calendar-dark.svg" width="20" height="20" alt="Project completed"/>
 					<div class="whitespace-nowrap">02/2022</div>
 				</div>
 				<div class="flex gap-2 shrink-0">
-					<img src="/clock.svg" alt="Time taken"/>
+					<img src="/clock-dark.svg" width="20" height="20" alt="Time taken"/>
 					<div class="whitespace-nowrap">2 Days</div>
 				</div>
 				<div class="flex gap-2 shrink-0">
-					<img src="/activity.svg" alt="Activities"/>
+					<img src="/activity-dark.svg" width="20" height="20" alt="Activities"/>
 					<div class="whitespace-nowrap">Website, Logo</div>
 				</div>
 			</div>
-			<h3 class="mt-8 text-4xl text-white">Gravity Sensation / Tricky Machines</h3>
-			<p class="mt-2 mb-10 text-sm text-neutral-400">Tricky Machines is a physics game developed by dev_archee with a built-in vehicle editor and map maker. Create your own scenarios or choose from hundreds of community made challenges.</p>
+			<p class="mt-4 mb-10 text-sm text-neutral-700">Tricky Machines is a physics game developed by dev_archee with a built-in vehicle editor and map maker. Create your own scenarios or choose from hundreds of community made challenges.</p>
 			<div class="flex gap-4">
 				<Button icon="link" text="Gravity Sensation" url="https://gravitysensation.vercel.app" external/>
 				<Button icon="link" text="Tricky Machines" url="https://gravitysensation.vercel.app/trickymachines" external/>
@@ -81,11 +81,11 @@
 	</div>
 
 	<h4 class="uppercase mt-12">Older Work</h4>
-	<hr class="my-4 md:mb-8"/>
-	<a href="/older-work.webp" target="_blank"><img src="/older-work.webp" alt="older work" srcset="" class="rounded-2xl"/></a>
-	<div class="flex mt-4 gap-4 max-w-md">
+	<hr class="my-4 border-black"/>
+	<div class="flex mb-4 gap-4 max-w-md">
 		<Button icon="link" text="The Fuze" url="https://thefuze.ie" external/>
 		<Button icon="link" text="Jodi Coyne, Artist" url="https://jodicoyne.com" external/>
 	</div>
+	<a href="/older-work.webp" target="_blank"><img src="/older-work.webp" alt="older work" srcset="" class="rounded-2xl"/></a>
 
 </Container>

@@ -10,7 +10,7 @@
 	let styles1, styles2
 
 	$: if (!$headerExpanded) {
-		styles1 = "bg-neutral-900"
+		styles1 = "bg-neutral-300"
 		styles2 = "!py-4"
 	} else {
 		styles1 = ""

@@ -4,19 +4,19 @@
 
 body {
 	font-family: 'Barlow', sans-serif;
-	color: #ccc;
-	background-color: #000;
+	color: #333;
+	background-color: #ccc;
 	-moz-osx-font-smoothing: grayscale;   /* Firefox */
 	-webkit-font-smoothing: antialiased; /* WebKit  */
 }
 
 b {
 	font-weight: normal;
-	color: white;
+	color: black;
 }
 
 a {
-	@apply text-sky-400 underline decoration-sky-600;
+	@apply text-sky-700 underline decoration-sky-400;
 }
 
 a:hover {
@@ -34,7 +34,7 @@ h2, h3, .dekar {
 }
 
 hr {
-    @apply border border-b-0 opacity-30 -z-20;
+    @apply border border-b-0 opacity-40 -z-20;
 }
 
 @font-face {
