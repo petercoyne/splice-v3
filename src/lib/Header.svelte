@@ -10,7 +10,7 @@
 	let styles1, styles2
 
 	$: if (!$headerExpanded) {
-		styles1 = "bg-neutral-300"
+		styles1 = "bg-black bg-opacity-10 backdrop-blur-md"
 		styles2 = "!py-4"
 	} else {
 		styles1 = ""
@@ -27,9 +27,9 @@
 	<div class="hidden sm:grid transition-all duration-1000 z-10 grid-cols-2 items-center gap-8 xl:gap-16 max-w-screen-2xl mx-auto p-8 sm:p-10 md:p-12 xl:p-24 xl:pb-6 {styles2}">
 		<div class="dummy flex">
 	
-			<a href="/" transition:fade|local class="-mt-1">
+			<!-- <a href="/" transition:fade|local class="-mt-1">
 				<CrossAnimation size="2"/>
-			</a>
+			</a> -->
 			<div transition:fade|local class="z-20">
 				<Logo size="0"/>
 			</div>
@@ -45,7 +45,7 @@
 	</div>
 
 	<div class="flex p-4 justify-between items-center sm:hidden">
-		<CrossAnimation size="1"/>
+		<!-- <CrossAnimation size="1"/> -->
 		<Logo size="0"/>
 		<MobileButton/>
 	</div>

@@ -20,13 +20,13 @@
 {#if $headerShown == false}
 <div class="fixed flex flex-col h-full w-full justify-around items-center top-0 bottom-0 left-0 right-0 ">
 
-	<div class="grid items-stretch justify-center mb-8 mt-16">
+	<div class="grid items-stretch justify-center mt-24">
 		<Logo size="1"/>
 	</div>
 
-	<div class="h-32 w-full max-w-full max-h-full grow mb-16 p-4">
+	<!-- <div class="h-32 w-full max-w-full max-h-full grow mb-16 p-4">
 		<CrossAnimation size="3"/>
-	</div>
+	</div> -->
 
 	<nav class="w-full p-4 grow-0">
 		<div in:fly="{{ y: 200, duration: 2000 }}"

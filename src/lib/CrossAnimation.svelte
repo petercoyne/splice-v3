@@ -22,9 +22,9 @@ if (size == 1) {
 }
 
 $: if (!$headerExpanded) {
-	bgcolor = "bg-neutral-300 shadow-2xl shadow-red-500"
+	bgcolor = "bg-white"
 } else {
-	bgcolor = "bg-neutral-300 shadow-[0_0_60px_10px_rgba(0,0,0,1)]"
+	bgcolor = "bg-black bg-opacity-50 backdrop-blur-xl mix-blend-darken shadow-[0_0_60px_10px_rgba(0,0,0,1)]"
 }
 
 afterUpdate(async () => {
@@ -35,8 +35,8 @@ afterUpdate(async () => {
 });
 
 </script>
-<div class="grid grid-cols-1 grid-rows-1 aspect-square items-center justify-center {twstring}">
-	<video id="flame" class="-z-30 w-full h-full max-w-full mx-auto aspect-square object-contain" src="/2-pass-500-vslow-grey-grain.mp4" autoplay playsinline muted loop />
+<div class="grid grid-cols-1 grid-rows-1 mix-blend-overlay aspect-square items-center justify-center {twstring}">
+	<video id="flame" class="mix-blend-overlay -z-30 w-full h-full max-w-full mx-auto aspect-square object-contain" src="/2-pass-500-vslow-grey-grain.mp4" autoplay playsinline muted loop />
 	<div id="secondarrows" bind:this={secondArrows}
 		 class="-z-20 opacity-0 max-h-full max-w-full h-full aspect-square grid items-center justify-center mx-auto grid-rows-2 grid-cols-2  row-start-1 col-start-1 transition-all duration-1000">
 		<div class="block justify-self-start self-start {arrowsize} border-t border-l border-black opacity-50"/>
@@ -48,16 +48,16 @@ afterUpdate(async () => {
 		id="flamegrid" bind:this={occlusionGrid}
 		class="w-full max-h-full grid grid-cols-2 -z-30 mx-auto aspect-square row-start-1 col-start-1">
 		<div id="flameq1" class="flamequad {bgcolor}">
-			<div class="rounded-xl justify-self-end self-end {arrowsize} border-r border-b border-black opacity-50"/>
+			<div class="rounded-3xl justify-self-end self-end {arrowsize} border-r border-b border-black opacity-50"/>
 		</div>
 		<div id="flameq2" class="flamequad {bgcolor}">
-			<div class="rounded-xl self-end {arrowsize} border-l border-b border-black opacity-50" />
+			<div class="rounded-3xl self-end {arrowsize} border-l border-b border-black opacity-50" />
 		</div>
 		<div id="flameq3" class="flamequad {bgcolor}">
-			<div class="rounded-xl justify-self-end {arrowsize} border-r border-t border-black opacity-50"/>
+			<div class="rounded-3xl justify-self-end {arrowsize} border-r border-t border-black opacity-50"/>
 		</div>
 		<div id="flameq4" class="flamequad {bgcolor}">
-			<div class="rounded-xl {arrowsize} border-l border-t border-black opacity-50" />
+			<div class="rounded-3xl {arrowsize} border-l border-t border-black opacity-50" />
 		</div>
 	</div>
 </div>

@@ -4,19 +4,23 @@
 
 body {
 	font-family: 'Barlow', sans-serif;
-	color: #333;
-	background-color: #ccc;
+	@apply text-sky-200;
+	background-color: #000;
+	background-image: url('/bg-blue-lowres.webp');
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
 	-moz-osx-font-smoothing: grayscale;   /* Firefox */
 	-webkit-font-smoothing: antialiased; /* WebKit  */
 }
 
 b {
 	font-weight: normal;
-	color: black;
+	color: white;
 }
 
 a {
-	@apply text-sky-700 underline decoration-sky-400;
+	@apply text-sky-400 underline decoration-sky-700;
 }
 
 a:hover {
@@ -24,6 +28,7 @@ a:hover {
 }
 
 h1 {
+	color: white;
 	font-family: 'Dekar', sans-serif;
 	-moz-osx-font-smoothing: auto;   /* Firefox */
      -webkit-font-smoothing: auto; /* WebKit  */
@@ -34,7 +39,7 @@ h2, h3, .dekar {
 }
 
 hr {
-    @apply border border-b-0 opacity-40 -z-20;
+    @apply border border-b-0 opacity-40 -z-20 border-white;
 }
 
 @font-face {
@@ -67,5 +72,24 @@ hr {
 	}
 	to {
         background-position: 300%;
+	}
+}
+
+.colorcycle-reverse {
+	background: linear-gradient(to right, #32C5FF 0%, #B620E0 33%, #F7B500 66%, #32C5FF 100%);
+	background-size:200%;
+	color: #000;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: shine-reverse 4s linear infinite;
+}
+
+@keyframes shine-reverse {
+	from {
+        background-position: 300%;
+	}
+	to {
+        background-position: 100%;
 	}
 }
