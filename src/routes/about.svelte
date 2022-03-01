@@ -9,7 +9,7 @@
 <svelte:window bind:scrollY={y}/>
 <Container>
 <div class="grid h-full min-h-[12rem] object-cover rounded-xl overflow-hidden">
-	<img src="/mtgable.webp" alt="Drone shot from Mt. Gable" srcset="" class="w-full h-full object-cover">
+	<img src="/mtgable.webp" alt="Drone shot from Mt. Gable" srcset="" width="2560" height="601" class="w-full h-full object-cover">
 </div>
 <p class="text-right text-xs text-neutral-600">Drone shot from Mt. Gable, Co. Galway</p>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 xl:gap-16 mt-8">
@@ -30,7 +30,7 @@
 		</div>
 	</div>
 	<div>
-		<h4 class="uppercase">Tools of the trade</h4>
+		<h4 class="uppercase">Tools</h4>
 		<hr class="my-4"/>
 		<div class="grid grid-cols-1 sm:grid-cols-[8rem_auto] lg:grid-cols-[10rem_auto] gap-4 md:gap-8 items-start">
 			<div class="self-start lg:mt-8 flex items-center justify-center max-w-full">
