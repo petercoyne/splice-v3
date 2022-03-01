@@ -7,6 +7,7 @@
 	let y
 	let activeImage = 1
 	import { headerExpanded, headerShown } from '$lib/stores.js';
+import ContainerFold from '$lib/ContainerFold.svelte';
 	$headerShown = true
 	$: if (y > 20) { headerExpanded.set(false) } else { headerExpanded.set(true) }
 </script>
@@ -14,9 +15,9 @@
 <svelte:window bind:scrollY={y}/>
 
 
-<Container>
+<ContainerFold>
 
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-16">
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-16 h-full">
 
 		<div>
 			<h4 class="uppercase flex gap-3">
@@ -56,7 +57,9 @@
 				<h5 class="sm:hidden uppercase text-xs bg-black rounded-md py-[3px] px-2 text-red-500 animate-pulse">Desktop/tablet recommended</h5>
 			</div>
 			<hr class="mt-4"/>
-			<img src="/tm.webp" alt="Tricky Machines"/>
+			<div class="">
+				<img src="/tm.webp" alt="Tricky Machines"/>
+			</div>
 
 			<!-- <div class="flex flex-col sm:flex-row flex-auto gap-4 w-full pt-1">
 				<div on:click={() => {activeImage = 1}} class="sm:hover:bg-neutral-700 border border-neutral-800 sm:hover:border-neutral-400 sm:cursor-pointer">
@@ -88,4 +91,4 @@
 	</div>
 	<a href="/older-work.webp" target="_blank"><img src="/older-work.webp" alt="older work" srcset="" class="rounded-2xl"/></a>
 
-</Container>
+</ContainerFold>

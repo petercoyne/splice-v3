@@ -26,9 +26,9 @@ bg-opacity-100 backdrop-blur-sm text-white hover:shadow-lg active:shadow-inner h
 
 <style type="text/postcss">
 	.is-active {
-		@apply bg-neutral-300 text-neutral-900 cursor-default stroke-neutral-900;
+		@apply bg-neutral-100 text-neutral-900 cursor-default stroke-neutral-900;
 	}
 	.is-active:hover {
-		@apply bg-neutral-300 text-neutral-900 cursor-default stroke-neutral-900 shadow-none;
+		@apply bg-neutral-100 text-neutral-900 cursor-default stroke-neutral-900 shadow-none;
 	}
 </style>

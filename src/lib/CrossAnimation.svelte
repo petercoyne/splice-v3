@@ -22,9 +22,9 @@ if (size == 1) {
 }
 
 $: if (!$headerExpanded) {
-	bgcolor = "bg-neutral-300"
+	bgcolor = "bg-neutral-300 shadow-2xl shadow-red-500"
 } else {
-	bgcolor = "bg-neutral-300"
+	bgcolor = "bg-neutral-300 shadow-[0_0_60px_10px_rgba(0,0,0,1)]"
 }
 
 afterUpdate(async () => {
@@ -64,7 +64,7 @@ afterUpdate(async () => {
 
 <style type="text/postcss">
 #flame {
-    mask: url(/circle.svg);
+    mask: url(/circle-smaller.svg);
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
@@ -77,6 +77,11 @@ afterUpdate(async () => {
     transition: all 2s;
     transform: rotate(0deg);
 	gap: 3px;
+
+	mask: url(/circle.svg);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
 	/* opacity: 80; */
 	/* mix-blend-mode: overlay; */
 }
