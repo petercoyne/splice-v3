@@ -5,9 +5,9 @@ import ButtonSmall from "./ButtonSmall.svelte";
 </script>
 {#if $headerShown}
 <div class="max-w-screen-2xl mx-auto p-6 sm:p-10 md:p-12 xl:px-24">
-	<hr class="opacity-10"/>
+	<hr class="opacity-10 "/>
 	<div class="flex justify-between sm:justify-end items-start mt-4 gap-4">
-		<a href="mailto:02-walk.gardens@icloud.com" class="opacity-40 hover:opacity-100">
+		<a href="mailto:hello@splice.ie" class="opacity-40 hover:opacity-100">
 			<ButtonSmall>
 				<img src="/send.svg" alt="email" class="p-1 sm:p-2"/>
 			</ButtonSmall>

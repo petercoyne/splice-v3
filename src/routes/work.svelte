@@ -8,17 +8,16 @@
 	let activeImage = 1
 	import { headerExpanded, headerShown } from '$lib/stores.js';
 	$headerShown = true
-	$: if (y > 20) { headerExpanded.set(false) } else { headerExpanded.set(true) }
+	$: if (y > 50) { headerExpanded.set(false) } else { headerExpanded.set(true) }
 </script>
 
 <svelte:window bind:scrollY={y}/>
 
-
 <Container>
 
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-16">
+	<div class="grid grid-cols-1 md:grid-cols-6 gap-8 h-full">
 
-		<div>
+		<div class="md:col-span-3 lg:col-span-4">
 			<h4 class="uppercase flex gap-3">
 				<a href="/work" class="text-sky-500 group hidden">
 					<ButtonSmall>
@@ -27,65 +26,59 @@
 				</a>
 				Latest Project
 			</h4>
-			<hr class="my-4"/>
-			<div class="flex opacity-40 gap-4 flex-row text-sm">
+			<hr class="my-4 "/>
+			<h3 class="mt-8 text-4xl text-white">The Fuze</h3>
+			<div class="flex opacity-60 gap-4 flex-row flex-wrap text-sm my-2">
 				<div class="flex gap-2 shrink-0">
-					<img src="/calendar.svg" alt="Project completed"/>
+					<img src="/calendar.svg" width="20" height="20" alt="Project completed"/>
 					<div class="whitespace-nowrap">02/2022</div>
 				</div>
 				<div class="flex gap-2 shrink-0">
-					<img src="/clock.svg" alt="Time taken"/>
-					<div class="whitespace-nowrap">2 Days</div>
+					<img src="/clock.svg" width="20" height="20" alt="Time taken"/>
+					<div class="whitespace-nowrap">? Days</div>
 				</div>
 				<div class="flex gap-2 shrink-0">
-					<img src="/activity.svg" alt="Activities"/>
-					<div class="whitespace-nowrap">Website, Logo</div>
+					<img src="/activity.svg" width="20" height="20" alt="Activities"/>
+					<div class="whitespace-nowrap">Website</div>
+				</div>
+				<div class="flex gap-2 shrink-0">
+					<img src="/tool.svg" width="20" height="20" alt="Activities"/>
+					<div class="whitespace-nowrap">SvelteKit, Tailwind 2.0</div>
 				</div>
 			</div>
-			<h3 class="mt-8 text-4xl text-white">Gravity Sensation / Tricky Machines</h3>
-			<p class="mt-2 mb-10 text-sm text-neutral-400">Tricky Machines is a physics game developed by dev_archee with a built-in vehicle editor and map maker. Create your own scenarios or choose from hundreds of community made challenges.</p>
+			<p class="mt-4 mb-4 text-sm sm:text-base">The Fuze were a Galway band with a unique sound. They released two singles in the early 80s on Mulligan Records - 'Stone age man' and 'Sunday morning' but despite having a lot of original material did not release any albums until a retrospective compliation, 'A blast from the past', released in 2007, 25 years after they split up.
+			</p>
+			<div class="mt-4 mb-10 text-sm flex items-center">
+				<img src="/chat.svg" alt="comments" class="float-left mr-2 w-8 h-8"/>
+				<p class="pl-2 border-l opacity-70">My uncle asked me if I'd be interested in developing a retrospective
+					website for his old band. It was a great opportunity to practice my dev skills and I'm pleased
+					with how it turned out, particularly the custom music player and navigation elements. I created
+					the burning fuse image using a cool app called <a href="https://fractorium.com/">Fractorium</a>.</p>
+			</div>
 			<div class="flex gap-4">
-				<Button icon="link" text="Gravity Sensation" url="https://gravitysensation.vercel.app" external/>
-				<Button icon="link" text="Tricky Machines" url="https://gravitysensation.vercel.app/trickymachines" external/>
+				<Button icon="link" text="TheFuze.ie" url="https://thefuze.ie/" external/>
+				<!-- <Button icon="link" text="Tricky Machines" url="https://gravitysensation.vercel.app/trickymachines" external/> -->
 			</div>
 		</div>
 
-		<div>
-			<div class="flex justify-between mt-8 md:mt-0">
-				<h4 class="uppercase text-neutral-500">Gallery</h4>
-				<h5 class="sm:hidden uppercase text-xs bg-black rounded-md py-[3px] px-2 text-red-500 animate-pulse">Desktop/tablet recommended</h5>
+		<div class="hidden md:block md:col-span-3 lg:col-span-2">
+			<div class="flex justify-between mt-2 md:mt-0">
+				<h4 class="uppercase opacity-50">Preview</h4>
+				<!-- <h5 class="sm:hidden uppercase text-xs bg-black rounded-md py-[3px] px-2 text-red-500 animate-pulse">Desktop/tablet recommended</h5> -->
 			</div>
 			<hr class="mt-4"/>
-			<img src="/tm.webp" alt="Tricky Machines"/>
-
-			<!-- <div class="flex flex-col sm:flex-row flex-auto gap-4 w-full pt-1">
-				<div on:click={() => {activeImage = 1}} class="sm:hover:bg-neutral-700 border border-neutral-800 sm:hover:border-neutral-400 sm:cursor-pointer">
-					<div class="text-sm mb-2 text-neutral-500 whitespace-nowrap">Responsive layout</div>
-					<img src="/work/gs1-thumb.webp" alt="Gravity Sensation 1" class="flex-1"/>
-				</div>
-				<div on:click={() => {activeImage = 2}} class="sm:hover:bg-neutral-700 border border-neutral-800 sm:hover:border-neutral-400 sm:cursor-pointer">
-					<div class="text-sm mb-2 text-neutral-500 whitespace-nowrap">Original → redesign</div>
-					<img src="/work/gs2-thumb.webp" alt="Gravity Sensation 2" class="flex-1"/>
-				</div>
-				<div on:click={() => {activeImage = 3}} class="sm:hover:bg-neutral-700 border border-neutral-800 sm:hover:border-neutral-400 sm:cursor-pointer">
-					<div class="text-sm mb-2 text-neutral-500 whitespace-nowrap">Lighthouse, code</div>
-					<img src="/work/gs3-thumb.webp" alt="Gravity Sensation 3" class="flex-1"/>
-				</div>
+			<div class="">
+				<!-- <img src="/fuze.webp" alt="thefuze.ie"/> -->
+				<iframe src="https://thefuze.ie" title="description" class="w-full h-128 min-h-full aspect-[9/16]"></iframe>
 			</div>
-			<hr class="mt-4 mb-8 opacity-20"/>
-			<a href="/work/gs{activeImage}.webp" target="_blank"
-			class="object-cover hidden sm:block min-h-0 max-h-full overflow-hidden">
-				<img src="/work/gs{activeImage}.webp" alt="Tricky Machines website screenshot" class="object-cover w-full"/>
-			</a> -->
 		</div>
 	</div>
 
-	<h4 class="uppercase mt-12">Older Work</h4>
-	<hr class="my-4 md:mb-8"/>
-	<a href="/older-work.webp" target="_blank"><img src="/older-work.webp" alt="older work" srcset="" class="rounded-2xl"/></a>
-	<div class="flex mt-4 gap-4 max-w-md">
-		<Button icon="link" text="The Fuze" url="https://thefuze.ie" external/>
-		<Button icon="link" text="Jodi Coyne, Artist" url="https://jodicoyne.com" external/>
+	<div class="flex justify-between mt-16 md:mt-8">
+		<h4 class="uppercase">Older Work (temporary image)</h4>
+		<h5 class="sm:hidden uppercase text-xs bg-black rounded-md py-[3px] px-2 text-red-500 animate-pulse">Desktop/tablet recommended</h5>
 	</div>
+	<hr class="my-4 "/>
+	<a href="/older-work.webp" target="_blank"><img src="/older-work.webp" alt="older work" srcset="" class="rounded-2xl"/></a>
 
 </Container>
