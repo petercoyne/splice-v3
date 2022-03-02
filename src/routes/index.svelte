@@ -1,10 +1,8 @@
 <script>
-	import CrossAnimation from '$lib/CrossAnimation.svelte'
 	import { fly, fade } from 'svelte/transition';
 	import Logo from '$lib/Logo.svelte';
 	import Button from '$lib/Button.svelte';
-	let shrinkLogo = false
-	import { headerExpanded, headerShown, rot1 } from '$lib/stores.js';
+	import { headerExpanded, headerShown } from '$lib/stores.js';
 	$headerShown = false
 
 	let y

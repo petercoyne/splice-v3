@@ -7,13 +7,11 @@
 	let y
 	let activeImage = 1
 	import { headerExpanded, headerShown } from '$lib/stores.js';
-import ContainerFold from '$lib/ContainerFold.svelte';
 	$headerShown = true
 	$: if (y > 50) { headerExpanded.set(false) } else { headerExpanded.set(true) }
 </script>
 
 <svelte:window bind:scrollY={y}/>
-
 
 <Container>
 
@@ -73,38 +71,14 @@ import ContainerFold from '$lib/ContainerFold.svelte';
 				<!-- <img src="/fuze.webp" alt="thefuze.ie"/> -->
 				<iframe src="https://thefuze.ie" title="description" class="w-full h-128 min-h-full aspect-[9/16]"></iframe>
 			</div>
-
-			<!-- <div class="flex flex-col sm:flex-row flex-auto gap-4 w-full pt-1">
-				<div on:click={() => {activeImage = 1}} class="sm:hover:bg-neutral-700 border border-neutral-800 sm:hover:border-neutral-400 sm:cursor-pointer">
-					<div class="text-sm mb-2 text-neutral-500 whitespace-nowrap">Responsive layout</div>
-					<img src="/work/gs1-thumb.webp" alt="Gravity Sensation 1" class="flex-1"/>
-				</div>
-				<div on:click={() => {activeImage = 2}} class="sm:hover:bg-neutral-700 border border-neutral-800 sm:hover:border-neutral-400 sm:cursor-pointer">
-					<div class="text-sm mb-2 text-neutral-500 whitespace-nowrap">Original → redesign</div>
-					<img src="/work/gs2-thumb.webp" alt="Gravity Sensation 2" class="flex-1"/>
-				</div>
-				<div on:click={() => {activeImage = 3}} class="sm:hover:bg-neutral-700 border border-neutral-800 sm:hover:border-neutral-400 sm:cursor-pointer">
-					<div class="text-sm mb-2 text-neutral-500 whitespace-nowrap">Lighthouse, code</div>
-					<img src="/work/gs3-thumb.webp" alt="Gravity Sensation 3" class="flex-1"/>
-				</div>
-			</div>
-			<hr class="mt-4 mb-8 opacity-20"/>
-			<a href="/work/gs{activeImage}.webp" target="_blank"
-			class="object-cover hidden sm:block min-h-0 max-h-full overflow-hidden">
-				<img src="/work/gs{activeImage}.webp" alt="Tricky Machines website screenshot" class="object-cover w-full"/>
-			</a> -->
 		</div>
 	</div>
 
 	<div class="flex justify-between mt-16 md:mt-8">
-		<h4 class="uppercase">Older Work</h4>
+		<h4 class="uppercase">Older Work (temporary image)</h4>
 		<h5 class="sm:hidden uppercase text-xs bg-black rounded-md py-[3px] px-2 text-red-500 animate-pulse">Desktop/tablet recommended</h5>
 	</div>
 	<hr class="my-4 "/>
-	<!-- <div class="flex mb-4 gap-4 max-w-md">
-		<Button icon="link" text="The Fuze" url="https://thefuze.ie" external/>
-		<Button icon="link" text="Jodi Coyne, Artist" url="https://jodicoyne.com" external/>
-	</div> -->
 	<a href="/older-work.webp" target="_blank"><img src="/older-work.webp" alt="older work" srcset="" class="rounded-2xl"/></a>
 
 </Container>

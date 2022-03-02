@@ -5,9 +5,9 @@
 	import Footer from "$lib/Footer.svelte"
 	import { headerExpanded, headerShown } from '$lib/stores.js'
 </script>
-<AnimController/>
+<!-- <AnimController/> -->
 
-{#if headerShown}
+{#if $headerShown}
 	<Header/>
 {/if}
 <slot/>
