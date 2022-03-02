@@ -9,7 +9,7 @@
 	import { headerExpanded, headerShown } from '$lib/stores.js';
 import ContainerFold from '$lib/ContainerFold.svelte';
 	$headerShown = true
-	$: if (y > 20) { headerExpanded.set(false) } else { headerExpanded.set(true) }
+	$: if (y > 50) { headerExpanded.set(false) } else { headerExpanded.set(true) }
 </script>
 
 <svelte:window bind:scrollY={y}/>
@@ -17,9 +17,9 @@ import ContainerFold from '$lib/ContainerFold.svelte';
 
 <Container>
 
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-16 h-full">
+	<div class="grid grid-cols-1 md:grid-cols-6 gap-8 h-full">
 
-		<div>
+		<div class="md:col-span-4">
 			<h4 class="uppercase flex gap-3">
 				<a href="/work" class="text-sky-500 group hidden">
 					<ButtonSmall>
@@ -29,7 +29,7 @@ import ContainerFold from '$lib/ContainerFold.svelte';
 				Latest Project
 			</h4>
 			<hr class="my-4 "/>
-			<h3 class="mt-8 text-4xl ">Gravity Sensation / Tricky Machines</h3>
+			<h3 class="mt-8 text-4xl ">The Fuze</h3>
 			<div class="flex opacity-60 gap-4 flex-row text-sm my-2">
 				<div class="flex gap-2 shrink-0">
 					<img src="/calendar.svg" width="20" height="20" alt="Project completed"/>
@@ -37,28 +37,41 @@ import ContainerFold from '$lib/ContainerFold.svelte';
 				</div>
 				<div class="flex gap-2 shrink-0">
 					<img src="/clock.svg" width="20" height="20" alt="Time taken"/>
-					<div class="whitespace-nowrap">2 Days</div>
+					<div class="whitespace-nowrap">? Days</div>
 				</div>
 				<div class="flex gap-2 shrink-0">
 					<img src="/activity.svg" width="20" height="20" alt="Activities"/>
-					<div class="whitespace-nowrap">Website, Logo</div>
+					<div class="whitespace-nowrap">Website</div>
+				</div>
+				<div class="flex gap-2 shrink-0">
+					<img src="/tool.svg" width="20" height="20" alt="Activities"/>
+					<div class="whitespace-nowrap">SvelteKit, Tailwind 2.0</div>
 				</div>
 			</div>
-			<p class="mt-4 mb-10 text-sm opacity-50">Tricky Machines is a physics game developed by dev_archee with a built-in vehicle editor and map maker. Create your own scenarios or choose from hundreds of community made challenges.</p>
+			<p class="mt-4 mb-4 text-sm opacity-70">The Fuze were a Galway band with a unique sound. They released two singles in the early 80s on Mulligan Records - 'Stone age man' and 'Sunday morning' but despite having a lot of original material did not release any albums until a retrospective compliation, 'A blast from the past', released in 2007, 25 years after they split up.
+			</p>
+			<div class="mt-4 mb-10 text-sm flex items-center">
+				<img src="/chat.svg" alt="comments" class="float-left mr-2 w-8 h-8"/>
+				<p class="pl-2 border-l ">My uncle asked me if I'd be interested in developing a retrospective
+					website for his old band. It was a great opportunity to practice my dev skills and I'm pleased
+					with how it turned out, particularly the custom music player and navigation elements. I created
+					the fuse burning image using a cool app called <a href="https://fractorium.com/">Fractorium</a>.</p>
+			</div>
 			<div class="flex gap-4">
-				<Button icon="link" text="Gravity Sensation" url="https://gravitysensation.vercel.app" external/>
-				<Button icon="link" text="Tricky Machines" url="https://gravitysensation.vercel.app/trickymachines" external/>
+				<Button icon="link" text="TheFuze.ie" url="https://thefuze.ie/" external/>
+				<!-- <Button icon="link" text="Tricky Machines" url="https://gravitysensation.vercel.app/trickymachines" external/> -->
 			</div>
 		</div>
 
-		<div>
-			<div class="flex justify-between mt-8 md:mt-0">
-				<h4 class="uppercase text-neutral-500">Gallery</h4>
-				<h5 class="sm:hidden uppercase text-xs bg-black rounded-md py-[3px] px-2 text-red-500 animate-pulse">Desktop/tablet recommended</h5>
+		<div class="hidden md:block md:col-span-2">
+			<div class="flex justify-between mt-2 md:mt-0">
+				<h4 class="uppercase opacity-50">Preview</h4>
+				<!-- <h5 class="sm:hidden uppercase text-xs bg-black rounded-md py-[3px] px-2 text-red-500 animate-pulse">Desktop/tablet recommended</h5> -->
 			</div>
 			<hr class="mt-4"/>
 			<div class="">
-				<img src="/tm.webp" alt="Tricky Machines"/>
+				<!-- <img src="/fuze.webp" alt="thefuze.ie"/> -->
+				<iframe src="https://thefuze.ie" title="description" class="w-full h-128 min-h-full aspect-[9/16]"></iframe>
 			</div>
 
 			<!-- <div class="flex flex-col sm:flex-row flex-auto gap-4 w-full pt-1">
@@ -83,12 +96,15 @@ import ContainerFold from '$lib/ContainerFold.svelte';
 		</div>
 	</div>
 
-	<h4 class="uppercase mt-12">Older Work</h4>
+	<div class="flex justify-between mt-16 md:mt-8">
+		<h4 class="uppercase">Older Work</h4>
+		<h5 class="sm:hidden uppercase text-xs bg-black rounded-md py-[3px] px-2 text-red-500 animate-pulse">Desktop/tablet recommended</h5>
+	</div>
 	<hr class="my-4 "/>
-	<div class="flex mb-4 gap-4 max-w-md">
+	<!-- <div class="flex mb-4 gap-4 max-w-md">
 		<Button icon="link" text="The Fuze" url="https://thefuze.ie" external/>
 		<Button icon="link" text="Jodi Coyne, Artist" url="https://jodicoyne.com" external/>
-	</div>
+	</div> -->
 	<a href="/older-work.webp" target="_blank"><img src="/older-work.webp" alt="older work" srcset="" class="rounded-2xl"/></a>
 
 </Container>

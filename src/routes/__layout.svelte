@@ -6,6 +6,7 @@
 	import { headerExpanded, headerShown } from '$lib/stores.js'
 </script>
 <AnimController/>
+
 {#if headerShown}
 	<Header/>
 {/if}

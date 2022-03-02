@@ -11,14 +11,14 @@
 <div class="grid h-full min-h-[12rem] object-cover rounded-xl overflow-hidden">
 	<img src="/mtgable.webp" alt="Drone shot from Mt. Gable" srcset="" width="2560" height="601" class="w-full h-full object-cover">
 </div>
-<p class="text-right text-xs text-neutral-600">Drone shot from Mt. Gable, Co. Galway</p>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 xl:gap-16 mt-8">
+<p class="text-right text-xs text-sky-800">Drone shot from Mt. Gable, Co. Galway</p>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-8 mt-8">
 	<div>
 		<h4 class="uppercase">Welcome</h4>
-		<hr class="my-4"/>
+		<hr class="my-4 opacity-10"/>
 		<div class="grid grid-cols-[4rem_1px_auto] sm:grid-cols-[8rem_auto] gap-4 md:gap-8 items-start">
 			<img src="/profile.webp" alt="Drone Selfie" title="Drone Selfie" class="self-start lg:mt-8" />
-			<div class="vertical-divider border-r border-neutral-700 h-full sm:hidden"></div>
+			<div class="vertical-divider border-r border-white opacity-20 h-full sm:hidden"></div>
 			<div>
 				<h3 class="text-3xl mb-2 lg:mt-2">Hello :)</h3>
 				<p class="leading-6 text-sm sm:text-base">
@@ -31,7 +31,7 @@
 	</div>
 	<div>
 		<h4 class="uppercase">Tools</h4>
-		<hr class="my-4"/>
+		<hr class="my-4 opacity-10"/>
 		<div class="grid grid-cols-1 sm:grid-cols-[8rem_auto] lg:grid-cols-[10rem_auto] gap-4 md:gap-8 items-start">
 			<div class="self-start lg:mt-8 flex items-center justify-center max-w-full">
 				<img src="/sveltekit-logo-noglow.webp" alt="SvelteKit" title="SvelteKit" class="shrink min-w-0 max-h-32 m-4 sm:scale-125"/>

@@ -14,8 +14,9 @@
 </script>
 
 <a href="{url}" {target} class:is-active={$page.url.pathname === url}
-class="transition-all grow flex no-underline z-10 grid-cols-[0.75rem_auto_0.75rem] h-12 bg-white bg-opacity-10 shadow-xl hover:shadow-lg active:shadow-inner 
- justify-center items-center rounded-tr-xl rounded-bl-xl bg-blend-overlay text-white">
+class="grow flex no-underline z-10 grid-cols-[0.75rem_auto_0.75rem] h-12 
+bg-white bg-opacity-5 shadow-lg hover:shadow-xl active:shadow-inner hover:bg-opacity-20
+ justify-center items-center rounded-tr-xl rounded-bl-xl backdrop-blur-xl text-white">
 	<div class="block z-50 justify-self-start self-start w-3 h-3 border-t border-l border-white opacity-20"></div>
 	<div class="transition-all uppercase no-underline grow text-center text-sm flex items-center justify-center">
 		{@html iconLink}{text}

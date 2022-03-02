@@ -1,6 +1,6 @@
 <script>
 	import CrossAnimation from '$lib/CrossAnimation.svelte'
-	import { fly } from 'svelte/transition';
+	import { fly, fade } from 'svelte/transition';
 	import Logo from '$lib/Logo.svelte';
 	import Button from '$lib/Button.svelte';
 	let shrinkLogo = false
@@ -18,17 +18,17 @@
 <svelte:window bind:scrollY={y}/>
 
 {#if $headerShown == false}
-<div class="fixed flex flex-col h-full w-full justify-around items-center top-0 bottom-0 left-0 right-0 ">
+<video transition:fade id="flamebg" src="/2-pass-500-vslow-grey-grain.mp4" autoplay playsinline muted loop 
+class="opacity-90 fixed mix-blend-overlay -z-50 w-screen h-screen object-cover object-center blur-md overflow-hidden"/>
 
-	<div class="grid items-stretch justify-center mt-24">
+<div transition:fade class="fixed flex flex-col h-full w-full justify-between items-center top-0 bottom-0 left-0 right-0 ">
+
+	<div class="grow grid items-stretch justify-center mt-24">
 		<Logo size="1"/>
 	</div>
 
-	<!-- <div class="h-32 w-full max-w-full max-h-full grow mb-16 p-4">
-		<CrossAnimation size="3"/>
-	</div> -->
 
-	<nav class="w-full p-4 grow-0">
+	<nav class="w-full p-6 grow-0">
 		<div in:fly="{{ y: 200, duration: 2000 }}"
 		class="w-full max-w-screen-md mx-auto max-h-full flex gap-4 md:pb-8 lg:pb-16">
 			<Button text="Work" url="/work"/>

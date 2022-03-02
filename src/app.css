@@ -9,6 +9,7 @@ body {
 	background-image: url('/bg-blue-lowres.webp');
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: top;
 	min-height: 100vh;
 	-moz-osx-font-smoothing: grayscale;   /* Firefox */
 	-webkit-font-smoothing: antialiased; /* WebKit  */
@@ -39,7 +40,7 @@ h2, h3, .dekar {
 }
 
 hr {
-    @apply border border-b-0 opacity-40 -z-20 border-white;
+    @apply border border-b-0 opacity-20 -z-20 border-white;
 }
 
 @font-face {
