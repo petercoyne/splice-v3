@@ -19,7 +19,7 @@ import Container from "$lib/Container.svelte";
 			</p>
 		</div>
 		<div class="grid md:grid-cols-4 gap-4 md:items-center">
-			<Button icon="send" url="mailto:02-walk.gardens@icloud.com" text="Email"/>
+			<Button icon="send" url="mailto:hello@splice.ie" text="Email"/>
 			<Button icon="instagram" url="https://www.instagram.com/acous/" text="Instagram"/>
 			<Button icon="twitter" url="https://twitter.com/cows/" text="Twitter"/>
 			<Button icon="github" url="https://github.com/petercoyne/" text="GitHub"/>

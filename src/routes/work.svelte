@@ -48,11 +48,11 @@ import ContainerFold from '$lib/ContainerFold.svelte';
 					<div class="whitespace-nowrap">SvelteKit, Tailwind 2.0</div>
 				</div>
 			</div>
-			<p class="mt-4 mb-4 text-sm opacity-70">The Fuze were a Galway band with a unique sound. They released two singles in the early 80s on Mulligan Records - 'Stone age man' and 'Sunday morning' but despite having a lot of original material did not release any albums until a retrospective compliation, 'A blast from the past', released in 2007, 25 years after they split up.
+			<p class="mt-4 mb-4 text-sm sm:text-base">The Fuze were a Galway band with a unique sound. They released two singles in the early 80s on Mulligan Records - 'Stone age man' and 'Sunday morning' but despite having a lot of original material did not release any albums until a retrospective compliation, 'A blast from the past', released in 2007, 25 years after they split up.
 			</p>
 			<div class="mt-4 mb-10 text-sm flex items-center">
 				<img src="/chat.svg" alt="comments" class="float-left mr-2 w-8 h-8"/>
-				<p class="pl-2 border-l ">My uncle asked me if I'd be interested in developing a retrospective
+				<p class="pl-2 border-l opacity-70">My uncle asked me if I'd be interested in developing a retrospective
 					website for his old band. It was a great opportunity to practice my dev skills and I'm pleased
 					with how it turned out, particularly the custom music player and navigation elements. I created
 					the burning fuse image using a cool app called <a href="https://fractorium.com/">Fractorium</a>.</p>

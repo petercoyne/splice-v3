@@ -51,7 +51,7 @@
 
 {#if $menuShow}
 	<div on:click="{toggleMenu}" use:clickOutside on:outclick={toggleMenu} transition:fade
-	class="fixed z-30 left-0 right-0 top-20 pt-1 transition-all duration-1000 backdrop-blur-md bg-opacity-90">
+	class="fixed sm:hidden z-30 left-0 right-0 top-20 pt-1 transition-all duration-1000 backdrop-blur-md bg-opacity-90">
 		<nav class="flex gap-4 p-6">
 			<Button text="Work" url="/work"/>
 			<Button text="About" url="/about"/>

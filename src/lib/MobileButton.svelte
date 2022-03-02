@@ -18,7 +18,7 @@
 		<div class="block z-50 justify-self-end self-end w-3 h-3 border-r border-b border-white opacity-30" />
 	</a>
 	{:else}
-		<a id="mobileclosebutton" transition:slide  class="row-start-1 col-start-1 z-50 border backdrop-blur border-red-700 top-8 left-8 bg-red-800 bg-opacity-30 rounded-full p-2 m-2 cursor-pointer">
+		<a id="mobileclosebutton" transition:slide  class="row-start-1 col-start-1 z-50 border backdrop-blur border-red-700 top-8 left-8 bg-red-800 bg-opacity-30 rounded-full p-3 cursor-pointer">
 			<img transition:slide src="/x.svg" alt="" srcset="" width="20" height="20">
 		</a>
 	{/if}
