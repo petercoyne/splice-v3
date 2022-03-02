@@ -17,7 +17,7 @@
 	<h1 class="tracking-tighter row-start-1 col-start-1 text-[8rem] px-6 mt-[2px] -z-10 text-white blur-[1px]">splice</h1>
 	<h1 class="tracking-tighter row-start-1 col-start-1 text-[8rem] px-6 mt-[5px] -z-10 text-white">splice</h1>
 	<h1 class="tracking-tighter row-start-1 col-start-1 text-[8rem] px-6 text-black">splice</h1>
-	<h2 class="text-center mt-[8rem] ml-16 row-start-1 col-start-1 text-[22px] text-white mix-blend-overlay opacity-80">design &amp; web dev</h2>
+	<h2 class="text-center mt-[8rem] ml-16 row-start-1 col-start-1 text-[22px] text-white mix-blend-overlay opacity-50">design &amp; web dev</h2>
 </div>
 {/if}
 
