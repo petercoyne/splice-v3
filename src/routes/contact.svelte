@@ -10,7 +10,7 @@ import Container from "$lib/Container.svelte";
 <Container>
 	<h4 class="uppercase">Contact Details</h4>
 	<hr class="mt-4 mb-8 opacity-10"/>
-	<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-16 md:mt-8">
+	<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:mt-8">
 		<div>
 			<h1 class="text-4xl mb-2">Get in touch!</h1>
 			<p class="leading-7">

@@ -19,7 +19,7 @@ import ContainerFold from '$lib/ContainerFold.svelte';
 
 	<div class="grid grid-cols-1 md:grid-cols-6 gap-8 h-full">
 
-		<div class="md:col-span-4">
+		<div class="md:col-span-3 lg:col-span-4">
 			<h4 class="uppercase flex gap-3">
 				<a href="/work" class="text-sky-500 group hidden">
 					<ButtonSmall>
@@ -29,8 +29,8 @@ import ContainerFold from '$lib/ContainerFold.svelte';
 				Latest Project
 			</h4>
 			<hr class="my-4 "/>
-			<h3 class="mt-8 text-4xl ">The Fuze</h3>
-			<div class="flex opacity-60 gap-4 flex-row text-sm my-2">
+			<h3 class="mt-8 text-4xl text-white">The Fuze</h3>
+			<div class="flex opacity-60 gap-4 flex-row flex-wrap text-sm my-2">
 				<div class="flex gap-2 shrink-0">
 					<img src="/calendar.svg" width="20" height="20" alt="Project completed"/>
 					<div class="whitespace-nowrap">02/2022</div>
@@ -55,7 +55,7 @@ import ContainerFold from '$lib/ContainerFold.svelte';
 				<p class="pl-2 border-l ">My uncle asked me if I'd be interested in developing a retrospective
 					website for his old band. It was a great opportunity to practice my dev skills and I'm pleased
 					with how it turned out, particularly the custom music player and navigation elements. I created
-					the fuse burning image using a cool app called <a href="https://fractorium.com/">Fractorium</a>.</p>
+					the burning fuse image using a cool app called <a href="https://fractorium.com/">Fractorium</a>.</p>
 			</div>
 			<div class="flex gap-4">
 				<Button icon="link" text="TheFuze.ie" url="https://thefuze.ie/" external/>
@@ -63,7 +63,7 @@ import ContainerFold from '$lib/ContainerFold.svelte';
 			</div>
 		</div>
 
-		<div class="hidden md:block md:col-span-2">
+		<div class="hidden md:block md:col-span-3 lg:col-span-2">
 			<div class="flex justify-between mt-2 md:mt-0">
 				<h4 class="uppercase opacity-50">Preview</h4>
 				<!-- <h5 class="sm:hidden uppercase text-xs bg-black rounded-md py-[3px] px-2 text-red-500 animate-pulse">Desktop/tablet recommended</h5> -->
