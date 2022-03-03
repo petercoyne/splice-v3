@@ -40,7 +40,7 @@ h2, h3, .dekar {
 }
 
 hr {
-    @apply border border-b-0 opacity-20 -z-20 border-white;
+    @apply border border-b-0 opacity-30 -z-20 border-white;
 }
 
 @font-face {
@@ -64,7 +64,7 @@ hr {
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	animation: shine 4s linear infinite;
+	animation: shine 6s linear infinite;
 }
 
 @keyframes shine {
